@@ -42,7 +42,7 @@
        
         for (let obj of myPhones) {
             let chart = document.createElement("div");
-            chart.style.height = "500px"
+            chart.style.height = "550px"
             chart.style.width = "280px"
             chart.style.margin = "20px"
             chart.style.padding = "10px"
@@ -112,8 +112,9 @@
             function atcc(){
             let atc = document.createElement("div");
             atc.innerHTML = "Added to cart <br>view cart to buy items"
-            atc.style.height = "50px"
+            atc.style.height = "40px"
             atc.style.width = "280px"
+            atc.style.marginTop = "10px"
             atc.style.borderRadius = "10px"
             atc.style.boxSizing= "borderbox"
             atc.style.textAlign= "center"
@@ -121,6 +122,10 @@
             atc.style.backgroundColor= "white"
             atc.style.boxShadow = "0px 0px 10px 3px black"
             chart.append(atc)
+            addcart.onclick= atccc
+            function atccc(){
+                addcart.remove()
+            }
             }
 
 
